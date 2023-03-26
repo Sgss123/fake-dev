@@ -4,7 +4,8 @@
   "description": "乱数假文生成",
   "main": "index.js",
   "scripts": {
-    "serve": "nodemon index.js"
+    "serve": "nodemon index.js",
+    "start":"nodemon index.js"
   },
   "author": "Sgss",
   "license": "ISC",
