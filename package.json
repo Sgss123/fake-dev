@@ -7,9 +7,6 @@
     "serve": "nodemon index.js",
     "start":"nodemon index.js"
   },
-  "engines": {
-    "node": "16.17.1"
-  },
   "author": "Sgss",
   "license": "ISC",
   "dependencies": {
