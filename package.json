@@ -1,0 +1,16 @@
+{
+  "name": "fake-dev",
+  "version": "1.0.0",
+  "description": "乱数假文生成",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon index.js"
+  },
+  "author": "Sgss",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "lorem-ipsum": "^2.0.8",
+    "nodemon": "^2.0.22"
+  }
+}
