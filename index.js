@@ -2,8 +2,6 @@ const express = require('express')
 const app = express()
 const { HOST, PORT } = require('./config.json')
 
-app.use(express.static('public'))
-
 //引入单词
 const word_controller = require('./controllers/wordController')
 
@@ -14,11 +12,8 @@ const sentence_controller = require('./controllers/sentenceController')
 const paragraph_controller = require('./controllers/paragraphController')
 
 //引入图片
-const image_controller = require('./controllers/imageController')
+// const image_controller = require('./controllers/imageController')
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + "/" + "index.html")
-})
 //单词
 app.get(/\/(\d+)(?:w|word|words|dc)(,*)$/, word_controller.word)
 
@@ -29,7 +24,7 @@ app.get(/\/(\d+)(?:s|sentence|sentences|jz)(,*)$/, sentence_controller.sentence)
 app.get(/\/(\d+)(?:p|paragraph|paragraphs|dl)(,*)$/, paragraph_controller.paragraph)
 
 //图片
-app.get(/\/(\d+)x(\d+)\.(jpg|jpeg|png)$/, image_controller.image)
+// app.get(/\/(\d+)x(\d+)\.(jpg|jpeg|png)$/, image_controller.image)
 
 app.listen(PORT, HOST, () => {
     console.log(`fake-dev is listening at http://${HOST}:${PORT}`)

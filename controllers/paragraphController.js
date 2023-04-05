@@ -7,7 +7,7 @@ exports.paragraph = (req, res) => {
     num = (num > config.MAX_PARAGRAPH) ? config.MAX_PARAGRAPH : num
     let lorem = (new LoremIpsum()).generateParagraphs(parseInt(num))
     if (req.params[1] == ',') {
-        lorem = lorem.split('\r\n')
+        lorem = lorem.split('\n')
     }
     res.json({
         'data': lorem,'msg':`您输入的字数为${req.params[0]}，最大限制为${config.MAX_PARAGRAPH}，超过的量已为您截断。`

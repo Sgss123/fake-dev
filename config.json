@@ -1,6 +1,6 @@
 {
     "HOST": "0.0.0.0",
-    "PORT": 3000,
+    "PORT": 8787,
     "MAX_WORD": 3000,
     "MAX_SENTENCE": 1500,
     "MAX_PARAGRAPH": 1000
