@@ -10,7 +10,7 @@ exports.image = (req, res) => {
     ctx.fillRect(0, 0, width, height)
     //设置文字颜色
     let fontSize = width / 10
-    let text = `${width}x${height}.${format}`
+    let text = `${width} x ${height}.${format}`
     ctx.fillStyle = '#f9f4dc'
     ctx.font = `${fontSize}px Consolas`
     let textWidth = ctx.measureText(text).width
