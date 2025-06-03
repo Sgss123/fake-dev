@@ -19,7 +19,7 @@ exports.image = async (request, matches) => {
     // 为了简单起见，我们返回一个由 Cloudflare Images 提供的占位图像 URL
 
     // 创建包含尺寸文本的图像 URL
-    const placeholderUrl = `https://placehold.co/${width}x${height}.${format}?text=${width}x${height}`;
+    const placeholderUrl = `https://placehold.co/${width}x${height}.${format}?text=${width} x ${height}.${format}`;
 
     try {
         // 获取占位图像
