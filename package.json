@@ -2,6 +2,7 @@
 	"name": "fake-dev",
 	"version": "1.0.0",
 	"private": true,
+	  "description": "乱数假文生成",
 	"scripts": {
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
@@ -16,4 +17,5 @@
 	"dependencies": {
 		"lorem-ipsum": "^2.0.8"
 	}
+
 }
